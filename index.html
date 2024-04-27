@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timestamp Recorder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="nowButton" class="center-button">Now</button>
+      <div id="timestampDisplay" class="timestamp-display"></div>
+      <button
+        id="logButton"
+        class="center-button log-button"
+        style="display: none"
+      >
+        Log
+      </button>
+    </div>
+
+    <div id="logView" class="modal" style="display: none">
+      <div id="modalContent">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+      <button
+        id="closeModal"
+        style="position: absolute; top: 10px; right: 20px"
+      >
+        Close
+      </button>
+      <button id="clearLog" style="position: absolute; top: 10px; right: 100px">
+        Clear log
+      </button>
+      <div id="messageArea"></div>
+      <!-- Content will be populated by JavaScript -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

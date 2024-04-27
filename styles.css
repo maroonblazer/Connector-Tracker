@@ -1,0 +1,66 @@
+/* styles.css */
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timestamp-display {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+.center-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.log-button {
+  margin-top: 20px; /* Space between the "Now" and "Log" buttons */
+}
+
+/* styles.css */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 40px;
+  z-index: 1000;
+  width: 80%;
+  height: 70%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+#closeModal {
+  display: none; /* Ensure this starts as hidden */
+  cursor: pointer; /* Make it obvious it's clickable */
+}
+#modalContent {
+  overflow-y: auto;
+  height: calc(100% - 50px); /* Reduce height to make room for close button */
+}
+
+/* Hide modal by default */
+.modal {
+  display: none;
+}
+
+#clearLog {
+  display: none; /* Start hidden and show only when modal is visible */
+  cursor: pointer; /* Make it clickable */
+}
